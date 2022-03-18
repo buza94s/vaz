@@ -1,0 +1,167 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 4px;
+    height: unset;
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        border: 2px solid #b4b1ac;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: unset;
+    color: green;
+}
+
+p {
+    margin: unset;
+    padding: unset;
+    color: #066060;
+}
+
+span {
+    margin: unset;
+    padding: unset;
+}
+
+h1 {
+    margin: unset;
+    padding: unset;
+    font-size: 22px;
+    color: #37434d;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: unset;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+.soc {
+    display: flex;
+    justify-content: flex-end;
+    align-self: end;
+}
+
+.soc-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+    .img-container {
+        justify-content: center;
+    }
+}
+
+.link {
+    text-decoration: unset;
+    text-decoration: unset;
+    font-size: 22px;
+    font-weight: 500;
+    color: green;
+}
+
+.imageHeader {
+    position: relative;
+    width: 50%;
+    height: 0px;
+    padding-top: 50%;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+}
+
+button {
+    padding: 5px 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: orange;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 22px;
+}
+
+.big-img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
