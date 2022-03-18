@@ -162,6 +162,8 @@ button {
     position: absolute;
     z-index: 1;
     width: 100%;
+    max-width: 500px;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
