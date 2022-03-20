@@ -31,6 +31,9 @@
                 <div class='navbar'>
 
                     <div class="soc">
+                        <a href='https://rutube.ru/channel/24705915/' target="_target_blank" class='link'>
+                            <img src='./assets/rt.png' width='50' height='30' />
+                        </a>
                         <a href='https://t.me/provance_vazuza' target="_target_blank" class='link'>
                             <img src='./assets/tg.svg' width='50' height='50' />
                         </a>
@@ -45,7 +48,10 @@
                         </a>
                     </div>
 
-                    <button style="width: 100%; margin-bottom: 30px;">Маршрут</button>
+                    <div style="display: flex; width: 100%;">
+                        <button onclick="popunDescriptionOpen();" style="width: 100%; margin-bottom: 30px;">Описание</button>
+                        <button onclick="popunRouteOpen();" style="width: 100%; margin: 0px 0px 30px 5px;">Маршрут</button>
+                    </div>
                 </div>
 
             </div>
@@ -128,28 +134,88 @@
         </div>
     </main>
 
+    <div class="popup-route">
+        <div class="wrapper-popup">
+            <div class="content-popup">
+                <a href='#' target="_target_blank" class='link-route'>
+                    Я. Карты
+                </a>
+                <a href='#' target="_target_blank" class='link-route'>
+                    Пункт для примера
+                </a>
+                <a href='#' target="_target_blank" class='link-route'>
+                    Пункт для примера 2
+                </a>
+            </div>
+
+            <div class="popup-close-route">
+                <img src="./assets/close.png" />
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup-description">
+        <div class="wrapper-popup">
+            <div class="content-popup">
+                <span class="popup-description-item">
+                    ДД 65. Дом оформлен в уютном стиле Прованс. 
+                    Большой участок прямо у леса подарит уединение, тишину и слияние с природой. 
+                    Завтраки с панорамным видом на лес, вечера при теплом свете гирлянд. 
+                    Гамак для наслаждения облаками и пением птиц. 
+                    Отдельная винная комната с удобными креслами-качелями для чтения книг, романтических вечеров и задушевных разговоров. 
+                    В доме есть вся необходимая посуда и техника для комфортного проживания.
+                </span>
+
+                <span class="popup-description-item">
+                    <p>Дом подходит для 4 человек</p>
+                    <p>+2 места для дополнительного размещения</p>
+                    <p>Можно с животными</p>
+                    <p>Гостиная совмещенная с кухней</p>
+                    <p>Одна большая и одна небольшая спальни</p>
+                    <p>Участок 20 соток</p>
+                </span>
+
+                <span class="popup-description-item">
+                    <p>- Wi-fi</p>
+                    <p>- Smart TV</p>
+                    <p>- запасной роутер wi-fi</p>
+                    <p>- угощения для питомцев</p>
+                    <p>-детский стульчик для кормления</p>
+                    <p>-детская посуда</p>
+                    <p>- мини станция Яндекс Алиса</p>
+                    <p>-кондиционер</p>
+                    <p>-утюг</p>
+                    <p>-сушилка для белья</p>
+                    <p>-фен</p>
+                    <p>-погружной блендер</p>
+                    <p>-микроволновая печь</p>
+                    <p>-духовой шкаф</p>
+                    <p>-винный шкаф</p>
+                    <p>-стиральная машина</p>
+                    <p>-посудомоечная машина</p>
+                    <p>-мангал</p>
+                    <p>-шаттл - тележка для багажа</p>
+                    <p>-комплимент для гостей</p>
+                </span>
+
+                <span class="popup-description-item">
+                    <p>Опции: Есть посудомоечная машина</p>
+                    <p>Расположение: Прямо у леса</p>
+                    <p>Можно с животными?: Да</p>
+                    <p>Количество гостей: 1-4 персоны</p>
+                    <p>Площадь: 65 м2</p>
+                    <p>Количество гостей: 1-2 персоны</p>
+                </span>
+            </div>
+
+            <div class="popup-close-description">
+                <img src="./assets/close.png" />
+            </div>
+
+        </div>
+    </div>
+
 </body>
-<script>
-
-    const close_photo = () => {
-        const body = document.querySelector('body');
-        document.getElementById("big-photo").innerHTML = ""
-        body.removeEventListener('click', close_photo);
-        const container = document.querySelector('.container');
-        container.style.opacity = '1';
-    }
-
-    const open_photo = (photo) => {
-        document.getElementById("big-photo")
-        .innerHTML = ("<img class='big-img' src='" + photo + "'>");
-
-        const body = document.querySelector('body');
-        const container = document.querySelector('.container');
-        container.style.opacity = '0.7';
-        body.addEventListener('click', close_photo, true);
-    }
-
-
-</script>
-
+<script src="./index.js"></script>
 </html>

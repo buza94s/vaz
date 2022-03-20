@@ -62,7 +62,8 @@ h1 {
 .soc {
     display: flex;
     justify-content: flex-end;
-    align-self: end;
+    align-self: center;
+    align-items: center;
 }
 
 .soc-link {
@@ -166,4 +167,54 @@ button {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
+}
+
+.popup-route, .popup-description {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.popup-description {
+    overflow: scroll;
+    height: 100%;
+}
+
+.wrapper-popup {
+    position: relative;
+}
+
+.content-popup {
+    box-sizing: border-box;
+    background: #a3b3b8;
+    width: 350px;
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.popup-description .content-popup {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.link-route {
+    color: #17373e;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 3px 0px;
+}
+
+.popup-close-route, .popup-close-description {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.popup-description-item {
+    margin-top: 20px;
 }
