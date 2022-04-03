@@ -23,8 +23,13 @@
         </Head>
         <header class="header">
             <div class="header-logo">
-                <img class="logo" src='./assets/logo.jpg' width='240' height='200' />
+                <img class="logo" src='./assets/logo.jpg' width='240' height='170' />
                 <div>
+                    <div style="display: flex;align-items: center;">
+                        <img style="width: 80px;" src="./assets/moretv.png" />
+                        <img style="width: 80px;" src="./assets/okko.png" />
+                        <img style="width: 80px;" src="./assets/ivi.jpg" />
+                    </div>
                     <div style="display: flex;align-items: center;">
                         <img src="./assets/1.png" />
                         <img src="./assets/2.png" />
@@ -35,7 +40,7 @@
                         <img src="./assets/4.png" />
                         <img src="./assets/5.png" />
                         <img src="./assets/6.png" />
-                        <span>все</span>
+                        <span class="big-info" role="button" onclick="popunDescriptionOpen()">всё</span>
                     </div>
                 </div>
             </div>
@@ -49,7 +54,7 @@
                         <p>Digital detox</p>
                     </div>
     
-                    <div>
+                    <div style="font-size: 13px;">
                         <p>200 км от Москвы, приключения</p>
                         <p>пляж, sub борд, лодки + more</p>
                         <p>пунк проката техники</p>
@@ -61,7 +66,7 @@
                     <p>расположен рядом с отелем <a href="https://vazuza-club.ru" target="_target_blank" style="text-decoration: underline;">Vazuza Country Club</a></p>
                     <p>на территории поселка Дубльдомов</p>
                     <p>Все услуги и инфраструктура отеля доступны для гостей</p>
-                    <p>Лесной участок 20 соток</p>
+                    <p>Участок рядом с лесом</p>
                     <p>Гриль зона</p>
                 </div>
 
@@ -72,9 +77,9 @@
                     <p>пандус для колясок</p>
 
                     <div style="display: flex; width: 100%; justify-content: space-between;">
-                        <p>dogs + cats Friendly</p>
-                        <p><a href="https://vazuza-club.ru/svadba" target="_target_blank" style="text-decoration: underline;">events agency</a></p>
-                        <p><a href='https://wubook.net/wbkd/wbk/?lcode=1429708281&onlyrooms=469073' target="_target_blank" style="text-decoration: underline;">быстрое бронирование</a></p>
+                        <p>Можно с животными</p>
+                        <p><a href="https://vazuza-club.ru/svadba" target="_target_blank" style="text-decoration: underline;font-size: 18px;">мероприятие</a></p>
+                        <p><a href='https://wubook.net/wbkd/wbk/?lcode=1429708281&onlyrooms=469073' target="_target_blank" style="text-decoration: underline;font-size: 18px;">быстрое бронирование</a></p>
                     </div>
                 </div>
             </div>
@@ -103,71 +108,87 @@
                     <div class="square">
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/1.jpg')" class="image" src="./assets/1.jpg" />
+                            <img onclick="open_photo('./assets/1.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/2.jpg')" class="image" src="./assets/2.jpg" />
+                            <img onclick="open_photo('./assets/2.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/3.jpg')" class="image" src="./assets/3.jpg" />
+                            <img onclick="open_photo('./assets/3.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/5.jpg')" class="image" src="./assets/5.jpg" />
+                            <img onclick="open_photo('./assets/5.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                     </div>
                     <div class="square">
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/13.jpg')" class="image" src="./assets/13.jpg" />
+                            <img onclick="open_photo('./assets/13.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/14.jpg')" class="image" src="./assets/14.jpg" />
+                            <img onclick="open_photo('./assets/14.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/15.jpg')" class="image" src="./assets/15.jpg" />
+                            <img onclick="open_photo('./assets/15.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/16.jpg')" class="image" src="./assets/16.jpg" />
+                            <img onclick="open_photo('./assets/16.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                     </div>
                     <div class="square">
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/17.jpg')" class="image" src="./assets/17.jpg" />
+                            <img onclick="open_photo('./assets/17.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/18.jpg')" class="image" src="./assets/18.jpg" />
+                            <img onclick="open_photo('./assets/18.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/20.jpg')" class="image" src="./assets/20.jpg" />
+                            <img onclick="open_photo('./assets/20.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/21.jpg')" class="image" src="./assets/21.jpg" />
+                            <img onclick="open_photo('./assets/21.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                     </div>
                     <div class="square">
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/24.jpg')" class="image" src="./assets/24.jpg" />
+                            <img onclick="open_photo('./assets/24.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/25.jpg')" class="image" src="./assets/25.jpg" />
+                            <img onclick="open_photo('./assets/25.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/26.jpg')" class="image" src="./assets/26.jpg" />
+                            <img onclick="open_photo('./assets/26.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                         <div class="imageHeader">
                             <img onclick="open_photo('./assets/27.jpg')" class="image" src="./assets/27.jpg" />
+                            <img onclick="open_photo('./assets/27.jpg')" class="plus" src="./assets/plus.png" />
                         </div>
                         
                     </div>
@@ -175,39 +196,9 @@
         </div>
     </main>
 
-    <div class="popup-route">
-        <div class="wrapper-popup">
-            <div class="content-popup">
-                <a href='#' target="_target_blank" class='link-route'>
-                    Я. Карты
-                </a>
-                <a href='#' target="_target_blank" class='link-route'>
-                    Пункт для примера
-                </a>
-                <a href='#' target="_target_blank" class='link-route'>
-                    Пункт для примера 2
-                </a>
-            </div>
-
-            <div class="popup-close-route">
-                <img src="./assets/close.png" />
-            </div>
-
-        </div>
-    </div>
-
     <div class="popup-description">
         <div class="wrapper-popup">
             <div class="content-popup">
-                <span class="popup-description-item">
-                    ДД 65. Дом оформлен в уютном стиле Прованс. 
-                    Большой участок прямо у леса подарит уединение, тишину и слияние с природой. 
-                    Завтраки с панорамным видом на лес, вечера при теплом свете гирлянд. 
-                    Гамак для наслаждения облаками и пением птиц. 
-                    Отдельная винная комната с удобными креслами-качелями для чтения книг, романтических вечеров и задушевных разговоров. 
-                    В доме есть вся необходимая посуда и техника для комфортного проживания.
-                </span>
-
                 <span class="popup-description-item">
                     <p>Дом подходит для 4 человек</p>
                     <p>+2 места для дополнительного размещения</p>
@@ -238,15 +229,7 @@
                     <p>-мангал</p>
                     <p>-шаттл - тележка для багажа</p>
                     <p>-комплимент для гостей</p>
-                </span>
-
-                <span class="popup-description-item">
-                    <p>Опции: Есть посудомоечная машина</p>
-                    <p>Расположение: Прямо у леса</p>
-                    <p>Можно с животными?: Да</p>
-                    <p>Количество гостей: 1-4 персоны</p>
-                    <p>Площадь: 65 м2</p>
-                    <p>Количество гостей: 1-2 персоны</p>
+                    <p>-пандусы для колясок, кресел - предоставляются по необходимости</p>
                 </span>
             </div>
 

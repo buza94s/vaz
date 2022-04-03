@@ -16,31 +16,6 @@ const open_photo = (photo) => {
     body.addEventListener('click', close_photo, true);
 }
 
-const popunRouteOpen = () => {
-    const body = document.querySelector('body');
-    const popup = document.querySelector('.popup-route');
-    const container = document.querySelector('.container');
-    const popupClose = document.querySelector('.popup-close-route');
-
-    popup.style.display = 'block';
-    container.style.opacity = '0.3';
-
-    body.addEventListener('click', popunRouteClose, true);
-    popupClose.addEventListener('click', popunRouteClose, true);
-}
-
-const popunRouteClose = () => {
-    const body = document.querySelector('body');
-    const popup = document.querySelector('.popup-route');
-    const container = document.querySelector('.container');
-
-    body.removeEventListener('click', popunRouteClose);
-
-    popup.style.display = 'none';
-    container.style.opacity = '1';
-
-}
-
 const popunDescriptionOpen = () => {
     const body = document.querySelector('body');
     const popup = document.querySelector('.popup-description');

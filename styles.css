@@ -31,6 +31,7 @@ p {
     margin: unset;
     padding: unset;
     color: #066060;
+    line-height: 1.1;
 }
 
 span {
@@ -47,7 +48,7 @@ h1 {
 
 .logo {
     width: 240px;
-    height: 200px;
+    height: 170px;
     margin: unset;
     margin-right: 10px;
 }
@@ -134,6 +135,7 @@ h1 {
     width: 50%;
     height: 0px;
     padding-top: 50%;
+    cursor: pointer;
 }
 
 .image {
@@ -142,6 +144,7 @@ h1 {
     left: 0;
     width: 95%;
     height: 95%;
+    border-radius: 5px;
 }
 
 button {
@@ -171,13 +174,12 @@ button {
 .popup-route, .popup-description {
     display: none;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -35%);
 }
 
 .popup-description {
-    overflow: scroll;
     height: 100%;
 }
 
@@ -223,6 +225,16 @@ button {
     flex-direction: column;
 }
 
+.plus {
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 768px) {
     .header{
         flex-direction: column;
@@ -238,4 +250,16 @@ button {
         justify-content: space-between;
         margin: 10px 0px;
     }
+}
+
+.big-info {
+    border: 2px solid #a2ae36;
+    padding: 3px;
+    border-radius: 5px;
+    color: #a2ae36;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: auto;
+    font-weight: 600;
 }
