@@ -47,16 +47,16 @@ h1 {
 }
 
 .logo {
-    width: 240px;
-    height: 170px;
+    width: 200px;
+    height: 180px;
     margin: unset;
     margin-right: 10px;
 }
 
 @media screen and (max-width: 900px) {
     .logo {
-        width: 240px;
-        height: 200px;
+        width: 200px;
+        height: 180px;
     }
 }
 
@@ -162,13 +162,13 @@ button {
 }
 
 .big-img {
-    position: absolute;
-    z-index: 1;
+    position: fixed;
     width: 100%;
     max-width: 500px;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
+    z-index: 1;
 }
 
 .popup-route, .popup-description {
@@ -189,12 +189,13 @@ button {
 
 .content-popup {
     box-sizing: border-box;
-    background: #a3b3b8;
+    background: #f7f7f7;
     width: 350px;
     display: flex;
     padding: 20px 10px;
     flex-direction: column;
     border-radius: 10px;
+    border: 1px solid;
 }
 
 .popup-description .content-popup {
@@ -214,6 +215,7 @@ button {
     right: 10px;
     top: 10px;
     cursor: pointer;
+    width: 25px;
 }
 
 .popup-description-item {
@@ -228,7 +230,7 @@ button {
 .plus {
     position: absolute;
     z-index: 1;
-    width: 60px;
+    width: 35px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -262,4 +264,20 @@ button {
     box-sizing: border-box;
     width: auto;
     font-weight: 600;
+}
+
+.header-description .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .header-description .links {
+        flex-direction: column;
+    }
+
+    .header-description .links p {
+        margin-top: 8px;
+    }
 }
